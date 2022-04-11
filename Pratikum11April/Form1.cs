@@ -57,21 +57,14 @@ namespace Pratikum11April
 
         private void cBoxTimHome_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
             lblManagerTimHome.Text = dtTeam.Rows[cBoxTimHome.SelectedIndex]["Nama Manager"].ToString();
             lblCaptainTimHome.Text = dtTeam.Rows[cBoxTimHome.SelectedIndex]["Captain"].ToString();
             lblCapacity.Text = dtTeam.Rows[cBoxTimHome.SelectedIndex]["Capacity"].ToString();
             lblStadium.Text = dtTeam.Rows[cBoxTimHome.SelectedIndex]["Stadium"].ToString();
-
-
-            // sampe sini
-
-
         }
 
         private void cBoxTimLawan_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             lblManagerTimLawan.Text = dtTeam2.Rows[cBoxTimLawan.SelectedIndex]["Nama Manager"].ToString();
             lblCaptainTimLawan.Text = dtTeam2.Rows[cBoxTimLawan.SelectedIndex]["Captain"].ToString();
         }
