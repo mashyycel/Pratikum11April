@@ -44,6 +44,13 @@ namespace Pratikum11April
             this.lblCaptainTimLawan = new System.Windows.Forms.Label();
             this.lblStadium = new System.Windows.Forms.Label();
             this.lblCapacity = new System.Windows.Forms.Label();
+            this.btn_check = new System.Windows.Forms.Button();
+            this.lbl_skor = new System.Windows.Forms.Label();
+            this.lbl_tanggal = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dgv_tanding = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_tanding)).BeginInit();
             this.SuspendLayout();
             // 
             // cBoxTimHome
@@ -58,7 +65,7 @@ namespace Pratikum11April
             // cBoxTimLawan
             // 
             this.cBoxTimLawan.FormattingEnabled = true;
-            this.cBoxTimLawan.Location = new System.Drawing.Point(457, 30);
+            this.cBoxTimLawan.Location = new System.Drawing.Point(531, 30);
             this.cBoxTimLawan.Name = "cBoxTimLawan";
             this.cBoxTimLawan.Size = new System.Drawing.Size(295, 24);
             this.cBoxTimLawan.TabIndex = 1;
@@ -76,7 +83,7 @@ namespace Pratikum11April
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 97);
+            this.label2.Location = new System.Drawing.Point(25, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 17);
             this.label2.TabIndex = 3;
@@ -85,7 +92,7 @@ namespace Pratikum11April
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 134);
+            this.label3.Location = new System.Drawing.Point(25, 134);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 17);
             this.label3.TabIndex = 4;
@@ -112,7 +119,7 @@ namespace Pratikum11April
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(257, 277);
+            this.label6.Location = new System.Drawing.Point(318, 236);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 17);
             this.label6.TabIndex = 8;
@@ -121,7 +128,7 @@ namespace Pratikum11April
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(257, 240);
+            this.label7.Location = new System.Drawing.Point(318, 199);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 17);
             this.label7.TabIndex = 7;
@@ -130,7 +137,7 @@ namespace Pratikum11April
             // lblManagerTimHome
             // 
             this.lblManagerTimHome.AutoSize = true;
-            this.lblManagerTimHome.Location = new System.Drawing.Point(105, 97);
+            this.lblManagerTimHome.Location = new System.Drawing.Point(99, 97);
             this.lblManagerTimHome.Name = "lblManagerTimHome";
             this.lblManagerTimHome.Size = new System.Drawing.Size(46, 17);
             this.lblManagerTimHome.TabIndex = 9;
@@ -139,7 +146,7 @@ namespace Pratikum11April
             // lblCaptainTimHome
             // 
             this.lblCaptainTimHome.AutoSize = true;
-            this.lblCaptainTimHome.Location = new System.Drawing.Point(105, 134);
+            this.lblCaptainTimHome.Location = new System.Drawing.Point(99, 134);
             this.lblCaptainTimHome.Name = "lblCaptainTimHome";
             this.lblCaptainTimHome.Size = new System.Drawing.Size(46, 17);
             this.lblCaptainTimHome.TabIndex = 10;
@@ -166,7 +173,7 @@ namespace Pratikum11April
             // lblStadium
             // 
             this.lblStadium.AutoSize = true;
-            this.lblStadium.Location = new System.Drawing.Point(344, 240);
+            this.lblStadium.Location = new System.Drawing.Point(405, 199);
             this.lblStadium.Name = "lblStadium";
             this.lblStadium.Size = new System.Drawing.Size(54, 17);
             this.lblStadium.TabIndex = 13;
@@ -175,17 +182,79 @@ namespace Pratikum11April
             // lblCapacity
             // 
             this.lblCapacity.AutoSize = true;
-            this.lblCapacity.Location = new System.Drawing.Point(344, 277);
+            this.lblCapacity.Location = new System.Drawing.Point(405, 236);
             this.lblCapacity.Name = "lblCapacity";
             this.lblCapacity.Size = new System.Drawing.Size(54, 17);
             this.lblCapacity.TabIndex = 14;
             this.lblCapacity.Text = "label13";
             // 
+            // btn_check
+            // 
+            this.btn_check.Location = new System.Drawing.Point(304, 283);
+            this.btn_check.Name = "btn_check";
+            this.btn_check.Size = new System.Drawing.Size(178, 38);
+            this.btn_check.TabIndex = 15;
+            this.btn_check.Text = "Check";
+            this.btn_check.UseVisualStyleBackColor = true;
+            this.btn_check.Click += new System.EventHandler(this.btn_check_Click);
+            // 
+            // lbl_skor
+            // 
+            this.lbl_skor.AutoSize = true;
+            this.lbl_skor.Location = new System.Drawing.Point(408, 381);
+            this.lbl_skor.Name = "lbl_skor";
+            this.lbl_skor.Size = new System.Drawing.Size(54, 17);
+            this.lbl_skor.TabIndex = 19;
+            this.lbl_skor.Text = "label13";
+            // 
+            // lbl_tanggal
+            // 
+            this.lbl_tanggal.AutoSize = true;
+            this.lbl_tanggal.Location = new System.Drawing.Point(408, 344);
+            this.lbl_tanggal.Name = "lbl_tanggal";
+            this.lbl_tanggal.Size = new System.Drawing.Size(54, 17);
+            this.lbl_tanggal.TabIndex = 18;
+            this.lbl_tanggal.Text = "label12";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(321, 381);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(41, 17);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Skor:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(321, 344);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(64, 17);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Tanggal:";
+            // 
+            // dgv_tanding
+            // 
+            this.dgv_tanding.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_tanding.Location = new System.Drawing.Point(28, 416);
+            this.dgv_tanding.Name = "dgv_tanding";
+            this.dgv_tanding.RowHeadersWidth = 51;
+            this.dgv_tanding.RowTemplate.Height = 24;
+            this.dgv_tanding.Size = new System.Drawing.Size(798, 281);
+            this.dgv_tanding.TabIndex = 20;
+            // 
             // FormHasilPertandingan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(849, 714);
+            this.Controls.Add(this.dgv_tanding);
+            this.Controls.Add(this.lbl_skor);
+            this.Controls.Add(this.lbl_tanggal);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.btn_check);
             this.Controls.Add(this.lblCapacity);
             this.Controls.Add(this.lblStadium);
             this.Controls.Add(this.lblCaptainTimLawan);
@@ -204,6 +273,7 @@ namespace Pratikum11April
             this.Name = "FormHasilPertandingan";
             this.Text = "Hasil Pertandingan";
             this.Load += new System.EventHandler(this.FormHasilPertandingan_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_tanding)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,6 +296,12 @@ namespace Pratikum11April
         private System.Windows.Forms.Label lblCaptainTimLawan;
         private System.Windows.Forms.Label lblStadium;
         private System.Windows.Forms.Label lblCapacity;
+        private System.Windows.Forms.Button btn_check;
+        private System.Windows.Forms.Label lbl_skor;
+        private System.Windows.Forms.Label lbl_tanggal;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DataGridView dgv_tanding;
     }
 }
 
